@@ -16,5 +16,18 @@ namespace LoginNavigation
 			Navigation.InsertPageBefore (new LoginPage (), this);
 			await Navigation.PopAsync ();
 		}
-	}
+
+        protected override async void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+			
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+
+            return base.OnBackButtonPressed();
+        }
+    }
 }
